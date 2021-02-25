@@ -1,0 +1,21 @@
+.genre-movies-container{
+  display: flex;
+}
+
+.movie{
+  width: 200px;
+  height: 200px;
+  background-color: orange;
+  margin-right: 20px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.movie:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: all 0.3s;
+}

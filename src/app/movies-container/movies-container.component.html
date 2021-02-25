@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="genre-container">
+    <h1 class="genere-heading">DRAMA</h1>
+    <div class="genre-movies-container">
+      <div
+        class="movie"
+        *ngFor="let movie of drama"
+        (click)="on_select(movie.content_id)"
+      >
+        <h3>{{ movie.contentTitle }}</h3>
+      </div>
+    </div>
+  </div>
+  <div class="genre-container">
+    <h1 class="genere-heading">FANTASY</h1>
+    <div class="genre-movies-container">
+      <div
+        class="movie"
+        *ngFor="let movie of fantasy"
+        (click)="on_select(movie.content_id)"
+      >
+        <h3>{{ movie.contentTitle }}</h3>
+      </div>
+    </div>
+  </div>
+</div>
